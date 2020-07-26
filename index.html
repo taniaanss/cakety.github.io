@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAKETY - BERANDA</title>
+
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  </head>
+
+  <body>
+    <button id="btn-top"><i class="fas fa-angle-double-up"></i></button>
+    <!-- sidebar -->
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+      <ul>
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+    <header>
+      <nav>
+        <h3 class="cabin">
+          <span class="judulC">C</span>a<span class="judulC">k</span>e<span
+            class="judulC"
+            >t</span
+          >y
+        </h3>
+        <ul class="prata">
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+
+        <!-- <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> -->
+
+        <!-- menu mobile -->
+        <label for="check" class="mobile-menu"><i class="fas fa-bars fa-2x"></i></label>
+      </nav>
+      <div class="container prata">
+        <div class="jumbotron">
+          <div class="jumbkiri">
+            <h1 class="jumbJudul">Rumah Bolu Untuk Para Penggemar Bolu.</h1>
+            <!-- <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur praesentium, distinctio quidem officiis id a
+              voluptate? Temporibus quod quia in.
+            </p> -->
+            <a href="tentang.html"><button class="btnTentang">Lebih Banyak...</button></a>
+            <a href="video.html"><i
+              class="far fa-play-circle fa-3x btnPlay"
+              style="color: blueviolet;" title="Tonton Video"
+            ></i></a>
+            <div class="ikonJumb">
+              <ul>
+                <li>
+                  <i
+                    class="fas fa-shipping-fast fa-2x"
+                    style="color: rgb(80, 201, 248);"
+                  ></i>
+                  <p class="ikon-p">Pengiriman Cepat</p>
+                </li>
+                <li>
+                  <i
+                    class="fas fa-egg fa-2x"
+                    style="color: rgb(226, 125, 43);"
+                  ></i>
+                  <p class="ikon-p">Bahan Bahan Segar</p>
+                </li>
+                <li>
+                  <i
+                    class="fas fa-cookie-bite fa-2x"
+                    style="color: rgb(102, 33, 1);"
+                  ></i>
+                  <p class="ikon-p">Rasa Berkualitas</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="jumbkanan">
+            <img class="sliderJumb" src="img/1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div id="content">
+          <article id="tentang">
+            <figure>
+              <img class="toko" src="IMG/toko2.jpg" alt="" />
+              <img class="toko2" src="IMG/toko1.jpg" alt="" />
+            </figure>
+            <section class="tentang-desk">
+              <h2>Tentang Kami</h2>
+              <hr class="hr-tentang" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
+                perferendis cupiditate repellendus, beatae, mollitia quidem
+                laborum ab molestias aliquam reprehenderit dolore sed velit,
+                alias neque earum soluta ad recusandae quisquam voluptas quae
+                tempore hic quia rem? Nulla quidem asperiores, doloribus,
+                repudiandae libero nesciunt sed fugit commodi voluptate, quas
+                consequatur voluptatum!
+              </p>
+              <a href="tentang.html"><button class="btnTentang">Lebih Banyak...</button></a>
+            </section>
+          </article>
+
+          <article id="form-pesan">
+            <section class="pesan-desk">
+              <h2>Pemesanan</h2>
+              <h1>Lakukan Pemesanan Sekarang, Sebelum Kehabisan.</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, libero! Assumenda repudiandae cum odio deserunt
+                soluta fuga, perferendis sed dolorum iste. Modi libero sapiente
+                et iure est? Laborum sit iusto delectus dolorum, iure quaerat,
+                numquam, tempora incidunt voluptatum odio sapiente enim quisquam
+                eligendi reprehenderit nemo aperiam. Magnam cum cumque odio!
+              </p>
+            </section>
+            <figure id="sampul">
+              <div class="kolom-pesan">
+                <h1>Pesan Disini</h1>
+                <form action="">
+                  <p>Nama Lengkap</p>
+                  <input type="text" placeholder="Masukkan Nama Anda" required/>
+                  <p>Email</p>
+                  <input type="email" placeholder="Masukkan Email Anda" required/>
+                  <p>No. Telp</p>
+                  <input type="tel" placeholder="Masukkan No Telepon" required/>
+                  <p>Nama Makanan</p>
+                  <input type="text" placeholder="Menu" required/>
+                  <p>Tanggal Pemesanan</p>
+                  <input type="date" required/>
+                  <button type="submit">Pesan</button>
+                </form>
+              </div>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copyright &#169 2020 All rights reserved</p>
+    </footer>
+    <script src="JS/script.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+  </body>
+</html>
